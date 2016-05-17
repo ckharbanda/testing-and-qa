@@ -14,7 +14,8 @@ public class HomePage extends BasePage {
 	}
 
 	public ComposePage clickComposeButton() {
-		driver.findElement(By.className("z0")).click();
+		//driver.findElement(By.className("z0")).click();
+		driver.findElement(By.xpath("//div[contains(text(),'COMPOSE')]")).click();
 		return new ComposePage(driver);
 	}
 
